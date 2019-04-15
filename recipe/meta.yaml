@@ -1,0 +1,17 @@
+package:
+  name: vtkmxeusrender 
+  version: "0.1.0"
+
+source:
+  git_url: https://github.com/m-kim/xeus-vtkm.git
+
+requirements:
+  build:
+    - {{ compiler('cxx')}}
+    - cmake
+    - ninja
+  run:
+    - vtk-m
+about:
+  home: https://github.com/m-kim/xeus-vtkm
+  license: BSD 3-Clause
